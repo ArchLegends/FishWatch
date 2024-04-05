@@ -24,4 +24,7 @@ Fish Watch aims to provide comprehensive monitoring and management solutions for
 
 
 ## Architectural Decision Records (ADR)
-
+- [ADR-001: Use of Satellites for Data Transfer in Remote Fish Farms](ADR/ADR-001:%20Use%20of%20Satellites%20for%20Data%20Transfer%20in%20Remote%20Fish%20Farms.md)
+- [ADR-001: Use of Mobile Devices for Data Transfer in Remote Fish Farms](ADR/ADR-001:%20FUse%20Fof%20FMobile%20FDevices%20Ffor%20FData%20FTransfer%20Fin%20FRemote%20FFish%20FFarms.md)
+- [ADR-003: Use of MQTT for Data Fetching from IoT Sensors](ADR/ADR-003:%20Use%20of%20MQTT%20for%20Data%20Fetching%20from%20IoT%20Sensors.md)
+- [ADR-004: Adoption of Google Cloud Platform as the Choice of Cloud Provider](ADR/ADR-004:%20Adoption%20of%20Google%20Cloud%20Platform%20as%20the%20Choice%20of%20Cloud%20Provider.md)
