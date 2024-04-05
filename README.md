@@ -21,7 +21,7 @@ Fish Watch aims to provide comprehensive monitoring and management solutions for
 - Accessibility from various devices, including rugged industrial devices used in remote locations.
 
 ## Approach
-
+- [General Architecture](./Solution/GeneralArchitecture.md)
 
 ## Architectural Decision Records (ADR)
 - [ADR-001: Use of Satellites for Data Transfer in Remote Fish Farms](ADR/ADR-001:%20Use%20of%20Satellites%20for%20Data%20Transfer%20in%20Remote%20Fish%20Farms.md)
