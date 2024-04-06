@@ -52,7 +52,9 @@ Real-time predictions are compared to predefined thresholds or historical baseli
 - Services are deployed in regions close to farms, ensuring low latency and high availability.
 - A centralized service aggregates data from multiple farms across different geographies, creating a multi-region application to serve distributed audiences effectively.
 
+## 5. Entity Relationship:
+![Entity Relationship Diragram](./images/entity_relationship.svg)
 
-## 5. Conclusion
+## 6. Conclusion
 
 Our system architecture provides a comprehensive solution for monitoring and managing industrial equipment in remote farm areas. By leveraging IoT, cloud-based services, and machine learning, we ensure real-time insights, anomaly detection, and predictive maintenance capabilities, thereby enhancing operational efficiency and reducing downtime.
