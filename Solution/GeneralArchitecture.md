@@ -48,6 +48,7 @@ Real-time predictions are triggered by a serverless computing platform based on 
 Real-time predictions are compared to predefined thresholds or historical baselines to identify potential equipment anomalies. Alerts are generated and routed to designated personnel for maintenance action, with support for SMS and email integrations. Severity levels can be assigned based on the predicted probability of failure.
 
 ## 4. Deployment:
+![Component](./images/component.svg)
 - Services are deployed in regions close to farms, ensuring low latency and high availability.
 - A centralized service aggregates data from multiple farms across different geographies, creating a multi-region application to serve distributed audiences effectively.
 
