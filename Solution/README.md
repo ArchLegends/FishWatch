@@ -15,11 +15,11 @@ The system architecture comprises several interconnected components working cohe
 - **Kafka:** Handles high-volume data streams efficiently, facilitating stream processing, validation, and preprocessing.
 - **Data Encryption Service:** Encrypts data for privacy during transit and storage.
 - **GCP Cloud Storage:** Provides reliable, scalable, and cost-effective data persistence.
-- **Web Dashboard:** Enables users to visualize data with role-based access control, ensuring privacy and security.
-- **Machine Learning Model Repository:** Stores trained models for equipment types and failure scenarios, facilitating version control, deployment, and scaling.
 - **Training Pipeline:** Allows data scientists to train and evaluate models using historical data and domain expertise, with support for online learning techniques.
+- **Machine Learning Model Repository:** Stores trained models for equipment types and failure scenarios, facilitating version control, deployment, and scaling.
 - **Machine Learning Inference:** Utilizes serverless computing platforms for real-time predictions based on incoming data streams, leveraging containerized models for scalability and flexibility.
 - **Anomaly Detection & Alerting:** Compares real-time predictions to predefined thresholds or historical baselines, generating alerts routed to designated personnel for maintenance action.
+- **Web Dashboard:** Enables users to visualize data with role-based access control, ensuring privacy and security.
 
 ## 3. Detailed Architecture
 
@@ -32,24 +32,25 @@ In the absence of connectivity, mobile devices can subscribe to the MQTT broker 
 
 In Kafka, data undergoes stream processing, validation, and preprocessing. Preprocessing techniques such as data normalization and feature engineering prepare data for analysis. Encrypted data is then stored in GCP Cloud Storage, ensuring reliability, scalability, and cost-effectiveness.
 
-### 3.3 User Interface and Access Control:
-- A Web Dashboard allows users to view data securely, implementing Role-Based Access Control to ensure customers only access data from their farms.
-
-### 3.4 Machine Learning Model Management
+### 3.3 Machine Learning Model Management
 
 The Machine Learning Model Repository stores trained models for various equipment types and failure scenarios. Version control enables easy rollbacks and deployment of improved models. Containerization technologies facilitate model deployment and scaling, while a separate training pipeline allows data scientists to train and evaluate new models using historical data and domain expertise. Online learning techniques enable models to adapt to changing operational conditions over time.
 
-### 3.5 Machine Learning Inference
+### 3.4 Machine Learning Inference
 
 Real-time predictions are triggered by a serverless computing platform based on incoming data streams. Containerized models are invoked for real-time prediction or batch processing for historical data analysis.
 
-### 3.6 Anomaly Detection & Alerting
+### 3.5 Anomaly Detection & Alerting
 
 Real-time predictions are compared to predefined thresholds or historical baselines to identify potential equipment anomalies. Alerts are generated and routed to designated personnel for maintenance action, with support for SMS and email integrations. Severity levels can be assigned based on the predicted probability of failure.
 
+### 3.6 User Interface and Access Control:
+
+A Web Dashboard allows users to view data securely, implementing Role-Based Access Control to ensure customers only access data from their farms.
+
 ## 4. Deployment:
 ![Component](./images/component.svg)
-- Services are deployed in regions close to farms, ensuring low latency and high availability.
+- Services are deployed in regions close to farms, which acts as a distributed computing resource that brings computation closer to the data source  reducing latency and bandwidth requirements.
 - A centralized service aggregates data from multiple farms across different geographies, creating a multi-region application to serve distributed audiences effectively.
 
 ## 5. Entity Relationship:
